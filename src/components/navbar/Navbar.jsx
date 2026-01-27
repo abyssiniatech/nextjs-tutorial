@@ -27,13 +27,18 @@ const links = [
     title: "About",
     url: "/about",
   },
-  {
+    {
     id: 5,
+    title: "product",
+    url: "/product",
+  },
+  {
+    id: 6,
     title: "Contact",
     url: "/contact",
   },
   {
-    id: 6,
+    id: 7,
     title: "Dashboard",
     url: "/dashboard",
   },
