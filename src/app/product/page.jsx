@@ -1,10 +1,18 @@
-const Products = async () => {
-  const res = await fetch("https://jsonplaceholder.typicode.com/posts")
-  const data = await res.json()
+import { useEffect, useState } from "react"
 import styles from "./product.module.css"
+
+const Products = () => {
+  const [data, setData] = useState([])
+
+  useEffect(() => {
+    fetch("https://jsonplaceholder.typicode.com/posts")
+      .then((res) => res.json())
+      .then((data) => setData(data))
+  }, [])
+
   return (
     <div>
-      <ul styles.ul>
+      <ul className={styles.ul}>
         {data.map((list) => (
           <li key={list.id}>
             <p>{list.id}</p>
