@@ -1,0 +1,21 @@
+.header{
+    background-color:black;
+    padding:4px;
+    width:100%;
+    display:flex;
+    color:white;
+    justify-content:space-between;
+    flex-items:center;
+}
+.title{
+    color:white;
+    font-size:10px;
+    flex-items:center;
+}
+.nav{
+    display:flex;
+    justify-content:center;
+    items-center;
+    gap:10px;
+
+}
